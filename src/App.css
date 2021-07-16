@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+html{
+  font-size: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Carousel{
+  background-color: black;
+  width: 100%;
+  height: 90vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Carousel-Parent{
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Carousal-image{
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: inline;
+}
+.Carousal-text{
+  
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 2%;
+  padding: 3rem;
+  font-size: 1.5rem;
   color: white;
-}
+  width: 50%;
+  background-color: black;
 
-.App-link {
-  color: #61dafb;
-}
+  opacity: 0.7;
+  border-radius: 2rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.Movie-Name{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+@media(max-width:600px){
+  .Carousel,.Carousal-image,.Carousel-Parent{
+    max-height: 70vh;
   }
-  to {
-    transform: rotate(360deg);
+  .NavLink{
+    align-self: center;
+
+    
+  }
+  .Carousal-text{
+    width: 100%;
+    left: 0;
+    padding: 0.3rem;
+    border-radius: 0.9rem;
+    font-size: 1.2rem;
+    max-height: 40%;
+    border: none;
+    
+    
+  }
+  .Movie-Name{
+    font-size: 1.5rem;
   }
 }

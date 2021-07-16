@@ -1,0 +1,124 @@
+<Navbar bg="dark" variant="dark" style={{
+                height: "110px",
+                alignItems:"stretch"
+                }} className="flex-column">
+                <Navbar.Brand  className="mb-0" style={{fontSize:"30px"}} href="#home">MovieMania <span style={{fontSize:"15px"}}> with </span><img className="ml-2" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"   
+                    width="55"
+                    height="45"
+                    alt="logo"
+                ></img>
+                <Button style={{alignSelf:"flex-end"}} varient="outline-warning">Login</Button>
+                </Navbar.Brand>
+                <Nav className="flex-container" style={{}}>
+                <Nav.Link style={{flexGrow:1,fontSize:"20px"}} href="/">Home</Nav.Link>
+                <Nav.Link style={{flexGrow:1,fontSize:"20px"}} href="/Recommandations">Top Lists</Nav.Link>
+                <Nav.Link style={{flexGrow:1,fontSize:"20px"}} href="/About">About</Nav.Link>
+                <Nav.Link style={{flexGrow:1,fontSize:"20px"}} href="/Login">Login</Nav.Link>
+                <Form inline className="ml-auto"  >
+                <FormControl disabled type="text" placeholder="Currently Disabled" className="mr-sm-2" />
+                <Button  variant="outline-light">Search</Button>
+
+
+
+
+
+
+                </Form>
+                </Nav>
+            </Navbar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    </Carousel.Item>
+    <Carousel.Item>
+        <img
+        style={
+            {
+                width:"100%",
+                 height:"550px",
+                 margin: "auto"
+               }
+         }
+         src={`https://image.tmdb.org/t/p/w1280/${movies[1].backdrop_path}`}
+        alt="second slide"
+        />
+        <div style={style} >
+                <h3 style={{fontSize:"5vh"}}>{movies[1].title}</h3>
+                <span style={{fontSize:"2vh"}}>{movies[1].overview}</span>
+            
+        </div>
+    </Carousel.Item>
+    <Carousel.Item>
+        <img
+         style={
+            {
+                 width:"100%",
+                 height:"550px",
+               }
+         }
+         src={`https://image.tmdb.org/t/p/w1280/${movies[2].backdrop_path}`}
+        alt="Third slide"
+        />
+        <div style={style} >
+                <h3 style={{fontSize:"5vh"}}>{movies[2].title}</h3>
+                <span style={{fontSize:"2vh"}}>{movies[2].overview}</span>
+            
+        </div>
+
+    </Carousel.Item>
+    <Carousel.Item>
+        <img
+         style={
+            {
+                width:"100%",
+                 height:"550px",
+               }
+         }
+         src={`https://image.tmdb.org/t/p/w1280/${movies[3].backdrop_path}`}
+        alt="Third slide"
+        />
+        <div style={style} >
+                <h3 style={{fontSize:"5vh"}}>{movies[3].title}</h3>
+                <span style={{fontSize:"2vh"}}>{movies[3].overview}</span>
+            
+        </div>
+
+    </Carousel.Item>
+    <Carousel.Item style={{position:"relative"}}>
+        <img
+         style={
+            {    width:"100%",
+                 height:"85vh",
+               }
+         }
+         src={`https://image.tmdb.org/t/p/w1280/${movies[4].backdrop_path}`}
+        alt="Third slide"
+        />
+        <div style={style} >
+                <h3 style={{fontSize:"5vw"}}>{movies[4].title}</h3>
+                <span className="d-none d-sm-block" style={{fontSize:"2vh"}}>{movies[4].overview}</span>
+            
+        </div>
+
+    </Carousel.Item>
